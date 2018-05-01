@@ -4,13 +4,14 @@ import SelectField from 'material-ui/SelectField';
 import MenuItem from 'material-ui/MenuItem';
 import axios from 'axios';
 import ImageResults from '../image-results/imageResults.js';
+import apiKey from '../../config_keys.js'
 
 class Search extends Component {
   state = {
       searchText: "",
       amount: 5,
       apiUrl: "https://pixabay.com/api",
-      apiKey: "8864495-f1cd18fd8273101102c9aee33",
+      apiKey: apiKey,
       images:[]
   }
 
